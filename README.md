@@ -8,7 +8,6 @@ A RSS link Generator for youtube channels from their handle URL.
 
 ```
 ./YRG.sh https://youtube.com/@anyhandle
-
 ```
 example:
 ```
