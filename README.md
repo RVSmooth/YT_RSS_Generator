@@ -1,3 +1,4 @@
+# Moved to https://gitlab.com/dotsmooth/YT_RSS_Generator
 # YT RSS Generator
 A RSS link Generator for youtube channels from their handle URL.
 
