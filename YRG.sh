@@ -10,7 +10,8 @@
 # example usage: ./YRG.sh https://www.youtube.com/@handle
 #
 
-url="$1"
+url="$( echo $1 | awk -F '@' '{print "@"$2}' | awk -F '/' '{print "https://www.youtube.com/"$1}')"
+
 filtercmd="sed -n 's/.*\(https:\/\/www\.youtube\.com\/channel\/[a-zA-Z0-9_-]\{24\}\).*/\1/p' | sort | uniq"
 
 # Define the filter function
@@ -24,8 +25,9 @@ function filter(){
 }
 
 filtered_output=$(filter "$url")
-
+echo -e "filtered_output: $filtered_output"
 channel_id="${filtered_output#*channel/}"
 converted_url="https://www.youtube.com/feeds/videos.xml?channel_id=$channel_id"
 echo -e "Link with id: $filtered_output"
 echo -e "RSS URL: $converted_url"
+
