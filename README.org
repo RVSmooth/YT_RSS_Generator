@@ -1,0 +1,22 @@
+* YT RSS Generator
+  A RSS link Generator for YouTube channels from their handle URL.
+
+** Purpose
+   There are many annoying shady sites on the internet which display countless ads or even ask for the creation of an account to generate an RSS feed URL for any YouTube channel. Although it is easy to manually view the source code of the YouTube webpage and grab the `Channel Identifier` from there, a bash script does the job easily.
+
+** Usage
+
+   [[file:assets/usage.gif]]
+
+  #+BEGIN_SRC bash
+    ./YRG.sh https://youtube.com/@anyhandle
+  #+END_SRC
+
+  Example:
+  #+BEGIN_SRC bash
+    rvs on orantium YRG on  main [?] 
+    ❯ ./YRG.sh https://www.youtube.com/@RiveeksSmooth
+    Link with id: https://www.youtube.com/channel/UCtVv57nSoIPoqNXBB7WrsmA
+    RSS URL: https://www.youtube.com/feeds/videos.xml?channel_id=UCtVv57nSoIPoqNXBB7WrsmA
+  #+END_SRC
+
