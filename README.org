@@ -9,14 +9,9 @@
    [[file:assets/usage.gif]]
 
   #+BEGIN_SRC bash
-    ./YRG.sh https://youtube.com/@anyhandle
+    ./YRG.sh https://youtube.com/@handlename
+   or
+   ./YRG.sh @handlename
   #+END_SRC
 
-  Example:
-  #+BEGIN_SRC bash
-    rvs on orantium YRG on  main [?] 
-    ❯ ./YRG.sh https://www.youtube.com/@RiveeksSmooth
-    Link with id: https://www.youtube.com/channel/UCtVv57nSoIPoqNXBB7WrsmA
-    RSS URL: https://www.youtube.com/feeds/videos.xml?channel_id=UCtVv57nSoIPoqNXBB7WrsmA
-  #+END_SRC
 
